@@ -23,7 +23,6 @@ class ViewController: UIViewController {
         
     }
     
-
     @IBAction func sldrTemperatureAction(_ sender: Any) {
         
         let sldrTempValue = sldrTemperature.value
