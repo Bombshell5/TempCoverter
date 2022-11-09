@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TempCoverter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dL0-rd-rxc">
+                                <rect key="frame" x="553" y="202" width="137" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Celsius °" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wOc-aX-xkE">
+                                <rect key="frame" x="100" y="161" width="68" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Temperature Converter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nco-Ck-FcS">
+                                <rect key="frame" x="277" y="94" width="176.66666666666663" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fahrenheit °" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TTS-lu-a2N">
+                                <rect key="frame" x="553" y="161" width="93" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A2U-d6-4we">
+                                <rect key="frame" x="553" y="202" width="137" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="137" id="Ecj-Ds-az6"/>
+                                    <constraint firstAttribute="height" constant="34" id="le9-Py-Equ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="-89" maxValue="58" translatesAutoresizingMaskIntoConstraints="NO" id="9vl-IU-ZSn">
+                                <rect key="frame" x="98" y="260" width="594" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="590" id="BSA-jy-kCl"/>
+                                    <constraint firstAttribute="height" constant="29" id="yAu-9C-p1b"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="sldrTemperatureAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="EOH-bS-1dO"/>
+                                </connections>
+                            </slider>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vEf-JZ-ldl" userLabel="Txt Celsius">
+                                <rect key="frame" x="100" y="202" width="137" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="Vbp-jG-8eW"/>
+                                    <constraint firstAttribute="width" constant="137" id="lNj-ji-Oij"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nco-Ck-FcS" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="35" id="A47-dG-Vbu"/>
+                            <constraint firstItem="A2U-d6-4we" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="533" id="DT1-iS-hs8"/>
+                            <constraint firstItem="wOc-aX-xkE" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="102" id="GRm-v2-ofI"/>
+                            <constraint firstItem="TTS-lu-a2N" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="533" id="NpI-aU-kzR"/>
+                            <constraint firstItem="wOc-aX-xkE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="80" id="SDB-Tt-7so"/>
+                            <constraint firstItem="9vl-IU-ZSn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="80" id="Sd9-Jc-Msi"/>
+                            <constraint firstItem="vEf-JZ-ldl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="80" id="VEf-aj-zCF"/>
+                            <constraint firstItem="9vl-IU-ZSn" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="201" id="W4b-2K-Ou3"/>
+                            <constraint firstItem="vEf-JZ-ldl" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="143" id="WRG-F2-Woq"/>
+                            <constraint firstItem="TTS-lu-a2N" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="102" id="YdR-d9-ggQ"/>
+                            <constraint firstItem="nco-Ck-FcS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="257" id="agK-NO-J6r"/>
+                            <constraint firstItem="A2U-d6-4we" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="143" id="zBB-lv-H3u"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="sldrTemperature" destination="9vl-IU-ZSn" id="NZz-6b-CBo"/>
+                        <outlet property="txtCelsius" destination="vEf-JZ-ldl" id="1UD-ot-Dm8"/>
+                        <outlet property="txtFahrenheit" destination="A2U-d6-4we" id="4pd-x4-sUg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20.422535211267608" y="3.8167938931297707"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
